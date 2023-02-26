@@ -4,3 +4,7 @@ dist
 .vercel
 .DS_Store
 npm-debug.log*
+
+package-lock.json
+
+.parcel-cache/
