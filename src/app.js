@@ -1,7 +1,6 @@
 import WebGL from 'three/examples/jsm/capabilities/WebGL.js';
 import { Viewer } from './viewer.js';
 import { SimpleDropzone } from 'simple-dropzone';
-import { Validator } from './validator.js';
 import queryString from 'query-string';
 
 window.VIEWER = {};
@@ -36,7 +35,6 @@ class App {
     this.spinnerEl = el.querySelector('.spinner');
     this.dropEl = el.querySelector('.dropzone');
     this.inputEl = el.querySelector('#file-input');
-    this.validator = new Validator(el);
 
     this.createDropzone();
     this.hideSpinner();
@@ -174,4 +172,4 @@ function isIFrame () {
 
 // bandwidth on this page is very high. hoping to
 // figure out what percentage of that is embeds.
-Tinybird.trackEvent('load', {embed: isIFrame()});
+//Tinybird.trackEvent('load', {embed: isIFrame()});

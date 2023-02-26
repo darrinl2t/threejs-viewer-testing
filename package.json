@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "version": "1.5.1",
+  "description": "Preview glTF models using three.js and a drag-and-drop interface.",
+  "author": "Don McCurdy <dm@donmccurdy.com> (https://www.donmccurdy.com)",
+  "license": "MIT",
+  "main": "public/app.js",
+  "browserslist": [
+    ">1%",
+    "not dead"
+  ],
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "assets",
+        "staticOutDir": "assets"
+      }
+    ]
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "dependencies": {
+    "dat.gui": "^0.7.9",
+    "gltf-validator": "^2.0.0-dev.3.9",
+    "handlebars": "^4.7.6",
+    "query-string": "^7.1.1",
+    "simple-dropzone": "^0.8.1",
+    "three": "^0.148.0"
+  },
+  "devDependencies": {
+    "buffer": "^5.7.1",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  }
+}
